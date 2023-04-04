@@ -1,0 +1,18 @@
+import random
+m=str(random.randint(1000,9999))
+z=(input('enter the no:'))
+b=[n for n in m]
+while True:
+    l = [k for k in z]
+    for i in range(0,4):
+        if l[i]==b[i]:
+            print("C",end='')
+        elif l[i]!=b[i] and l[i] in (b):
+            print("P",end="")
+        else:
+            print('X',end="")
+    print()
+    if l==b:
+        print('well done')
+        break
+    z=(input('enter the no:'))
